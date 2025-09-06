@@ -15,6 +15,7 @@ from tkinter import ttk
 import webbrowser
 import time
 
+################### PRIMEIRA PARTE APENAS PARA ABRIR UMA JANELA QUANDO FOR EXECUTÁVEL, FIZ ISSO PENSANDO EM FUTURAMENTE TORNAR UM PROGRAMA EXECUTÁVEL ##########
 def get_local_ip():
     hostname = socket.gethostname()
     local_ip = socket.gethostbyname(hostname)
@@ -56,10 +57,8 @@ def abrir_janela():
 
     root.after(5000, fechar_loading)  # 5s de espera
     root.mainloop()
-
-
-
-
+    
+########INÍCIO DO CODIGO##########
 # Configurar idioma para português
 locale.setlocale(locale.LC_TIME, "pt_BR.UTF-8")
 
@@ -411,4 +410,5 @@ def download_itens(n_clicks):
 # ==============================
 if __name__ == "__main__":
     abrir_janela()
+
 

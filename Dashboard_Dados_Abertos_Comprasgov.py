@@ -724,3 +724,4 @@ def download_atas(n_clicks):
 # ==============================
 if __name__ == "__main__":
     abrir_janela()
+

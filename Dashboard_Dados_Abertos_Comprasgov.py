@@ -96,6 +96,17 @@ def selecionar_uasg():
     combo.pack(pady=10)
     combo.current(0)
 
+    tk.Label(
+    root,
+    text=(
+        "Após clicar em confirmar, o programa fará requisição no Banco de Dados do Governo Federal, "
+        "por favor aguarde. Isso pode levar alguns segundos."
+    ),
+    font=("Arial", 12),
+    wraplength=550,  # largura máxima em pixels antes de quebrar linha
+    justify="left"   # alinhamento do texto
+).pack(pady=5)
+
     selecionada = {"codigo": None, "nome": None}
 
     def confirmar():
@@ -724,4 +735,3 @@ def download_atas(n_clicks):
 # ==============================
 if __name__ == "__main__":
     abrir_janela()
-
